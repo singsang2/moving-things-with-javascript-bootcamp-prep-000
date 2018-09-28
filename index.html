@@ -13,9 +13,9 @@
       var dodger = document.getElementById("dodger")
       
       document.addEventListener("keydown", function(e){
-        if(e.which === 37){
+        if(e.key === "ArrowLeft"){
           moveDodgerLeft()
-        } else if (e.which === 38){
+        } else if (e.key === "ArrowRight"){
           moveDodgerRight()
         }
       })

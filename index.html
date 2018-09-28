@@ -35,8 +35,11 @@
         var leftNumbers = dodger.style.left.replace("px", "")
         var left = parseInt(leftNumbers, 10)
         
-        if(dodger.style.left<400-40)
-          dodger
+        if(dodger.style.left < 400-40){
+          dodger.style.left = `${left + 1}px`
+        } else{
+          alert("Can't go any more to the right!")
+        }
       }
     </script>
   </body>

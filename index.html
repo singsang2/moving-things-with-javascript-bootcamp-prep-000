@@ -25,6 +25,7 @@
         var left = parseInt(leftNumbers, 10)
         
         if(left > 0){
+          dodger.style.backgroundColor = "#000000"
           dodger.style.left = `${left - 1}px`
         } else{
           dodger.style.backgroundColor = "#FF69B4"
@@ -36,9 +37,10 @@
         var left = parseInt(leftNumbers, 10)
         
         if(left < 400-40){
+          dodger.style.backgroundColor = "#000000"
           dodger.style.left = `${left + 1}px`
         } else{
-          alert("Can't go any more to the right!")
+          dodger.style.backgroundColor = "#FF69B4"
         }
       }
     </script>

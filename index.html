@@ -24,7 +24,7 @@
         var leftNumbers = dodger.style.left.replace("px", "")
         var left = parseInt(leftNumbers, 10)
         
-        if(dodger.style.left > 0){
+        if(left > 0){
           dodger.style.left = `${left - 1}px`
           console.log(`${dodger.style.left}`)
         } else{console.log(`${dodger.style.left} not moved`)}
@@ -34,7 +34,7 @@
         var leftNumbers = dodger.style.left.replace("px", "")
         var left = parseInt(leftNumbers, 10)
         
-        if(dodger.style.left < 400-40){
+        if(left < 400-40){
           dodger.style.left = `${left + 1}px`
         } 
       }

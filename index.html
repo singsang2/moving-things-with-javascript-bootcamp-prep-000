@@ -26,7 +26,8 @@
         
         if(dodger.style.left > 0){
           dodger.style.left = `${left - 1}px`
-        } 
+          console.log(`${dodger.style.left}`)
+        } else{console.log(`${dodger.style.left} not moved`)}
       }
       
       function moveDodgerRight(){

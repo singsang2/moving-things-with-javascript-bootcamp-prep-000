@@ -26,8 +26,9 @@
         
         if(left > 0){
           dodger.style.left = `${left - 1}px`
-          console.log(`${dodger.style.left}`)
-        } else{console.log(`${dodger.style.left} not moved`)}
+        } else{
+          dodger.style.backgroundColor = "#FF69B4"
+        }
       }
       
       function moveDodgerRight(){
@@ -36,7 +37,9 @@
         
         if(left < 400-40){
           dodger.style.left = `${left + 1}px`
-        } 
+        } else{
+          alert("Can't go any more to the right!")
+        }
       }
     </script>
   </body>

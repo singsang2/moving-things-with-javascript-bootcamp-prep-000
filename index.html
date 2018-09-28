@@ -10,7 +10,26 @@
       <div id="dodger" style="bottom: 0px; left: 180px;"></div>
     </div>
     <script>
-      // your code here
+      var dodger = document.getElementById("dodger")
+      
+      document.addEventListener("keydown", function(e){
+        if(e.which === 37){
+          moveDodgerLeft()
+        } else if (e.which === 38){
+          moveDodgerRight()
+        }
+      })
+      
+      function moveDodgerLeft(){
+        var leftNumbers = dodger.style.left.replace("px", "")
+        var left = parseInt(leftNumbers, 10)
+        
+        if(dodger.style.left > 0){
+          dodger.style.left = `${left - 1}px`
+        } else{
+          
+        }
+      }
     </script>
   </body>
 </html>
